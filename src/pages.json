@@ -1,0 +1,109 @@
+{
+  "pages": [
+    //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+
+    {
+      "path": "pages/index/main",
+      "style": {
+        "navigationBarTitleText": "首页"
+      }
+    },
+    {
+      "path": "pages/category/main",
+      "style": {
+        "navigationBarTitleText": "商品分类"
+      }
+    },
+    {
+      "path": "pages/cart/main",
+      "style": {
+        "navigationBarTitleText": "购物车"
+      }
+    },
+    {
+      "path": "pages/user/main",
+      "style": {
+        "navigationBarTitleText": "个人中心"
+      }
+    },
+    {
+      "path": "pages/goods_list/main",
+      "style": {
+        "navigationBarTitleText": "商品列表",
+        "enablePullDownRefresh": true
+      }
+    },
+    {
+      "path": "pages/collect/main",
+      "style": {
+        "navigationBarTitleText": "商品收藏"
+      }
+    },
+    {
+      "path": "pages/goods_detail/main",
+      "style": {
+        "navigationStyle": "custom",
+        "navigationBarTitleText": "商品详情"
+      }
+    },
+    {
+      "path": "pages/pay/main",
+      "style": {
+        "navigationBarTitleText": "提交订单"
+      }
+    },
+    {
+      "path": "pages/auth/main",
+      "style": {
+        "navigationBarTitleText": "登录"
+      }
+    },
+    {
+      "path": "pages/login/main",
+      "style": {
+        "navigationBarTitleText": "登录"
+      }
+    }
+  ],
+  //等价于原生小程序 app.json
+  "globalStyle": {
+    "navigationBarTextStyle": "white",
+    "navigationBarTitleText": "优购",
+    "navigationBarBackgroundColor": "#EB4450",
+    "backgroundColor": "#F8F8F8"
+  },
+  "tabBar": {
+    "color": "#585858",
+    "selectedColor": "#E74C57",
+    "backgroundColor": "#FFF",
+    "position": "bottom",
+    "borderStyle": "black",
+    "custom": false,
+    "list": [
+      {
+        "pagePath": "pages/index/main",
+        "text": "首页",
+        "iconPath": "static/tabs/index.png",
+        "selectedIconPath": "static/tabs/index_selected.png"
+      },
+      {
+        "pagePath": "pages/category/main",
+        "text": "分类",
+        "iconPath": "static/tabs/cart.png",
+        "selectedIconPath": "static/tabs/cart_selected.png"
+      },
+      {
+        "pagePath": "pages/cart/main",
+        "text": "购物车",
+        "iconPath": "static/tabs/category.png",
+        "selectedIconPath": "static/tabs/category_selected.png"
+      },
+      {
+        "pagePath": "pages/user/main",
+        "text": "我的",
+        "iconPath": "static/tabs/user.png",
+        "selectedIconPath": "static/tabs/user_selected.png"
+      }
+    ]
+  }
+}
